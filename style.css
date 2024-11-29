@@ -1,0 +1,205 @@
+*{
+    
+    font-family: "zarid_serif_regular";
+  }
+  html,
+  body,
+  header,
+
+  #intro{
+      background: url("w_background.jpg");
+      background-size: cover;
+      background-repeat: repeat;
+  }
+    .box input[type = "submit"]{
+      border:0;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border: 2px solid #477275;
+      padding: 14px 40px;
+      outline: none;
+      color: rgb(10, 10, 10);
+      border-radius: 24px;
+      transition: 0.25s;
+      cursor: pointer;
+    }
+    .box input[type = "submit"]:hover{
+      background: #536ba0;
+    }
+    h6{
+      color:#3e4852;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      text-align:center;
+      text-indent: 100px;
+      margin-left:80px;
+      margin-right:80px;
+    }
+    .reminder-note {
+      background-color: #f8f8f8;
+      border: 1px solid #8b6a6a;
+      padding: 10px;
+      margin-bottom: 20px;
+      margin-left:0;
+      
+    }
+    .reminder-note p {
+      margin: 0;
+      font-size: 16px;
+    }
+    .reminder-note strong {
+      font-weight: bold;
+    }
+    
+
+  .custom-select {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 18px;
+  color: #60666d;
+  width: 100%;
+  
+  @media (min-width: 500px) {
+    width: 60%;
+  }
+  
+  @media (min-width: 992px) {
+    width: 60%;
+  }
+  
+  @media (min-width: 1200px) {
+    width: 60%;
+  }
+  
+  &__current {
+    position: relative;
+    box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+    cursor: pointer;
+    outline: none;
+    
+    &:focus {
+      & + .custom-select__list {
+        opacity: 1;
+
+
+        animation-name: none;
+        
+        .custom-select__option {
+          cursor: pointer;
+        }
+      }
+      
+      .custom-select__icon {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+  
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    opacity: 0.3;
+    transition: 0.2s ease;
+  }
+  
+  &__value {
+    display: flex;
+  }
+  
+  &__input {
+    display: none;
+    
+    &:checked + .custom-select__input-text {
+      display: block;
+    }
+  }
+  
+  &__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: #fff;
+  }
+  
+  &__list {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+  
+    
+    animation-name: HideList;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: step-start;
+    box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+  }
+  
+  &__option {
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+    
+    &:hover,
+    &:focus {
+      color: #546c84;
+      background-color: #fbfbfb;
+    }
+  }
+ }
+
+@keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+  /*
+  h5,h4{
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem;
+  }
+  */
+  /*Footer */
+  .section-footer{
+      background:#555;
+      color:#fff;
+      padding: 4rem 0;
+    }
+  
+    .section-footer .container{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap:1rem;
+    }
+  
+    .section-footer h2{
+      font-size:2rem;
+      margin-bottom:1rem;
+    }
+  
+    .section-footer h3{
+      margin-bottom: 0.7rem;
+    }
+  .section-footer a{
+    line-height:1.9;
+    color:#ccc;
+  }
+  
+  .section-footer a > i{
+    color:#555;
+    margin-right: 0.5rem;
+  }
